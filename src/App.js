@@ -8,16 +8,24 @@ import PowerSupplySensors from "./Menu/Items/PowerSupplySensors";
 import DigitalInputs from "./Menu/Items/DigitalInputs";
 import EventLog from "./Menu/Items/EventLog";
 import Service from "./Menu/Items/Service";
+import MyTable from "./components/UI/table/MyTable";
+import {columns, data } from "./data/PowerSupplySensors";
 
 const MainContent = () => {
   let location = useLocation();
+    const accordionItems = [
+        {value: 'Датчики электропитания', panel: <MyTable columns={columns} data={data}/>},
+        {value: 'Дискретные выходы', panel: 'asaa;ka;skcxas;lkxma;lskxa;sola;adx'},
+        {value: 'Цифровые датчики', panel: 'asaa;ka;skcxas;lkxma;lskxa;sola;adx'},
+        {value: 'Релейные выходы', panel: 'asaa;ka;skcxas;lkxma;lskxa;sola;adx'},
+        {value: 'Рейлейные выходы модулей расширения', panel: 'asaa;ka;skcxas;lkxma;lskxa;sola;adx'},
+    ]
   switch (location.pathname){
-      case '/main': return (<Main/>)
+      case '/main': return (<Main items={accordionItems}/>)
       case '/power_supply_sensors': return (<PowerSupplySensors/>)
       case '/digital_inputs': return (<DigitalInputs/>)
       case '/event_log': return (<EventLog/>)
       case '/graphic': return (<Graphic/>)
-     /* case '/settings': return (<Settings/>)*/
       case '/service': return (<Service/>)
   }
 }
@@ -37,10 +45,8 @@ const App = () => {
     <div className="App">
         <BrowserRouter>
         <nav>
-            <div className="burger-btn" onClick={()=> setMenuActive(!menuActive)}>
-                <span/>
-            </div>
-            <div>{items.value}</div>
+            <img src={require("./burger.png")} alt="Burger" height="20px" width="30px" onClick={()=> setMenuActive(!menuActive)} className="burger"/>
+            <img src={require("./logo.ico")} alt="Logo" height="30px" className="logo"/>
         </nav>
         <main>
                 <MainContent/>

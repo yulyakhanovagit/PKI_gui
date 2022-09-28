@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
-import './Menu.css'
+import '../styles/Menu.css'
 import DropdownMenu from "../DropdownMenu";
+import MyButton from "../components/UI/button/MyButton";
 
 const Menu = ({items, active, setActive}) => {
     const [menuActive, setMenuActive] = useState(false)

@@ -1,0 +1,10 @@
+.form__body{
+    padding: 40px;
+    background-color: #EFF2FF;
+    border: 1px solid #C6D7F2;
+    text-align: left;
+}
+.form{
+    margin: 20px;
+   text-align: right;
+}

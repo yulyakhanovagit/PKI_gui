@@ -1,9 +1,12 @@
 import React from 'react';
 import classes from './MyInput.module.css'
 
-const MyInput = (props) => {
+const MyInput = ({header}) => {
     return (
-        <input className={classes.MyInput} {...props}/>
+        <div>
+            <h1 className={classes.inputHeader}>{header}</h1>
+            <input className={classes.MyInput}/>
+        </div>
     );
 };
 

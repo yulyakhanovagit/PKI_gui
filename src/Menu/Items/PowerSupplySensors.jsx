@@ -1,9 +1,13 @@
 import React from 'react';
+import MyForm from "../../components/UI/form/MyForm";
 
 const PowerSupplySensors = () => {
     return (
         <div>
-            Датчики питания
+            <MyForm/>
+            <MyForm/>
+
+
         </div>
     );
 };

@@ -5,50 +5,35 @@
 
 nav{
     height: 70px;
-    width: 100%;
+    width: 100vw;
     position: fixed;
     z-index: 50;
     display: flex;
     align-items: center;
     border-bottom: 2px solid #B4C6E5;
     background-color: white;
+    justify-content: space-between;
+    right: 0;
 }
 main{
     padding: 120px 70px;
 }
+
 p{
     margin: 20px;
 }
-.burger-btn{
-    width: 30px;
-    height: 20px;
-    margin-left: 40px;
-    position: relative;
+.burger{
+    padding-left: 40px;
     cursor: pointer;
 }
-.burger-btn:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 30px;
-    background-color: #5F86C4;
-    height: 3px;
+.logo{
+    padding-right: 40px;
+}
 
-}
-.burger-btn:after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 30px;
-    background-color: #5F86C4;
-    height: 3px;
-}
-.burger-btn span{
-    position: absolute;
-    top: 9px;
-    width: 30px;
-    background-color: #5F86C4;
-    height: 3px;
-}
+
+
+
+
+
 
 
