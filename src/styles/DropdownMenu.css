@@ -1,0 +1,22 @@
+.menu__content_dropdown{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    border-right: 2px solid #B4C6E5;
+    background-color: #F6F8FF;
+}
+.li__dropdown{
+    font-size: 1rem;
+    padding: 10px;
+}
+.dropdown{
+    display: none;
+}
+.dropdown.active{
+    display: block;
+    padding-left: 0;
+}
+.item__dropdown{
+    display: block;
+    padding: 30px 40px 30px 40px;
+}

@@ -2,7 +2,9 @@
     color: #49589F;
     font-family: Sans, serif;
     font-size: 1.5rem;
+    position: relative;
+    overflow-scrolling: auto;
 }
 .rdt_TableHeader{
-    background-color: #EFF2FF;
+    background-color: #11247a;
 }

@@ -16,9 +16,15 @@ nav{
     right: 0;
 }
 main{
-    padding: 120px 70px;
+    display: flex;
 }
+content{
+    width: 100vw;
+    padding: 120px 70px;
+    position: sticky;
+    left: 0;
 
+}
 p{
     margin: 20px;
 }
