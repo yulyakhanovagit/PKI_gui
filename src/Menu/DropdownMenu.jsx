@@ -7,8 +7,8 @@ const DropdownMenu = ({items, active, setActive}) => {
             <ul className="ul__dropdown">
                 {items.map(item =>
                     <li className="li__dropdown" key={item.value}>
-                        <a href={item.href}>{item.value}</a>
-                        <i className="fa fa-angle-right"></i>
+                        <a className="a__dropdown" href={item.href}>{item.value} <i className="fa fa-angle-right"></i></a>
+
                     </li>
                 )}
             </ul>

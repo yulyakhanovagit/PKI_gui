@@ -1,10 +1,19 @@
-.rdt_Table{
+table{
+    width: 100%;
+    text-align: center;
     color: #49589F;
     font-family: Sans, serif;
     font-size: 1.5rem;
     position: relative;
     overflow-scrolling: auto;
+    border-spacing: 0;
+    border: 1px  solid  #B4C6E5
 }
-.rdt_TableHeader{
-    background-color: #11247a;
+thead{
+    background-color: #EFF2FF;
+}
+th, td{
+    padding: 10px 20px;
+    text-align: center;
+    border: 1px solid #B4C6E5
 }

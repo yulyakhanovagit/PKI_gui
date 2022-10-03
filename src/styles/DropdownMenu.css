@@ -7,7 +7,13 @@
 }
 .li__dropdown{
     font-size: 1rem;
-    padding: 10px;
+    border-top: 2px solid #B4C6E5;
+    border-bottom: white;
+}
+.a__dropdown{
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
 }
 .dropdown{
     display: none;
@@ -15,8 +21,4 @@
 .dropdown.active{
     display: block;
     padding-left: 0;
-}
-.item__dropdown{
-    display: block;
-    padding: 30px 40px 30px 40px;
 }

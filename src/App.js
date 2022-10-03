@@ -39,7 +39,7 @@ const MainContent = () => {
         {value: 'Рейлейные выходы модулей расширения', panel: <MyTable columns={columns_5} data={data_5}/>},
     ]
   switch (location.pathname){
-      case '/': return (<Main items={accordionItems}/>)
+      case '/': return (<Main items={accordionItems} header='Главная'/>)
       case '/power_supply_sensors': return (<PowerSupplySensors/>)
       case '/digital_inputs': return (<DigitalInputs/>)
       case '/event_log': return (<EventLog/>)
@@ -77,7 +77,6 @@ const App = () => {
                 <MainContent/>
             </content>
         </main>
-
         </BrowserRouter>
     </div>
   );

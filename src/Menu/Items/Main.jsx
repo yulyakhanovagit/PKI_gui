@@ -10,9 +10,11 @@ import classes from '../itemsCss/Main.css';
 import MyTable from "../../components/UI/table/MyTable";
 import MyButton from "../../components/UI/button/MyButton";
 
-const Main = ({items}) => {
+const Main = ({items, header}) => {
 
     return (
+        <div>
+        <div className="header">{header}</div>
         <Accordion allowMultipleExpanded>
             {items.map(item =>
             <AccordionItem key={item.uuid}>
@@ -29,6 +31,7 @@ const Main = ({items}) => {
             </AccordionItem>
             )}
         </Accordion>
+        </div>
     );
 };
 
