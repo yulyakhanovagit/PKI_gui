@@ -1,17 +1,13 @@
 import React from 'react';
 import MyForm from "../../components/UI/form/MyForm";
-import MyInput from "../../components/UI/input/MyInput";
-import classes from '../itemsCss/Items.css'
-import MyTable from "../../components/UI/table/MyTable";
-import { columns_1, data_1} from "../../data/PowerSupplySensors";
+import EditTable from "../../components/UI/table/EditTable";
 
-const PowerSupplySensors = () => {
+const PowerSupplySensors = ({columns, data}) => {
+
     return (
-        <div >
             <MyForm content={<div>
-                <MyTable data={data_1} columns={columns_1}/>
+                <EditTable data={data} columns={columns}/>
             </div>}/>
-        </div>
     );
 };
 

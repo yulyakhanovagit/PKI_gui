@@ -4,10 +4,11 @@ table{
     color: #49589F;
     font-family: Sans, serif;
     font-size: 1.5rem;
-    position: relative;
-    overflow-scrolling: auto;
     border-spacing: 0;
-    border: 1px  solid  #B4C6E5
+    border: 1px  solid  #B4C6E5;
+    overflow: auto;
+    position: relative;
+    background-color: white;
 }
 thead{
     background-color: #EFF2FF;
@@ -17,3 +18,10 @@ th, td{
     text-align: center;
     border: 1px solid #B4C6E5
 }
+.editedHead{
+    background-color: white;
+}
+tbody tr:hover{
+    background-color: #EFF2FF;
+}
+

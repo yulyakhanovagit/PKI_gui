@@ -40,7 +40,7 @@ const MainContent = () => {
     ]
   switch (location.pathname){
       case '/': return (<Main items={accordionItems} header='Главная'/>)
-      case '/power_supply_sensors': return (<PowerSupplySensors/>)
+      case '/power_supply_sensors': return (<PowerSupplySensors columns={columns_1} data={data_1}/>)
       case '/digital_inputs': return (<DigitalInputs/>)
       case '/event_log': return (<EventLog/>)
       case '/graphic': return (<Graphic/>)
@@ -66,6 +66,7 @@ const App = () => {
 
   return (
     <div className="App">
+
         <BrowserRouter>
         <nav>
             <img src={require("./burger.png")} alt="Burger" height="20px" width="30px" onClick={()=> setMenuActive(!menuActive)} className="burger"/>

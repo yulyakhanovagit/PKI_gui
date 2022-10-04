@@ -4,7 +4,7 @@ import MyInput from "../../../components/UI/input/MyInput";
 
 const SettingsSNMP = () => {
     return (
-        <div>
+        <div className="main__wrapper">
             <MyForm content={
                 <div>
                     <MyInput header='Модификатор на чтение:'/>

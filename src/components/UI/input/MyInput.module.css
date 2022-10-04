@@ -1,14 +1,32 @@
 .MyInput{
-    width: 60%;
+    width: 90%;
     padding: 5px 15px;
-    margin-bottom: 20px;
     border: 1px solid #C6D7F2;
     background-color: white;
     font-size: 1.5rem;
 }
 .inputHeader{
+    margin-top: 20px;
     font-family: Sans;
     font-size: 1.5rem;
     color: #49589F;
     font-weight: normal;
+}
+.tInput{
+    width: 60%;
+    padding: 5px 10px;
+    border: 3px solid #C6D7F2;
+    background-color: #EFF2FF;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+.tInputHeader{
+    background-color: #49589F;
+    color: white;
+}
+.tCheckBox{
+    transform:scale(2.5);
+    border: 1px solid #C6D7F2;
+    background-color: white;
+    padding: 5px 15px;
 }
