@@ -34,6 +34,20 @@ p{
 .logo{
     padding-right: 40px;
 }
+.login__page{
+    display: flex;
+    justify-content: center;
+}
+.login__form{
+    padding: 12px;
+    margin-top: 100px;
+    width: 30%;
+    height: 20%;
+    background-color: #F6F8FF;
+    border: 2px solid #B4C6E5;
+    border-radius: 3px;
+    overflow: auto;
+}
 
 
 

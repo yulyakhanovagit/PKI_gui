@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import '../styles/Menu.css'
 import DropdownMenu from "./DropdownMenu";
 import MyButton from "../components/UI/button/MyButton";
-import {useLocation} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 
 
 const Menu = ({items, active, setActive, header}) => {
@@ -21,7 +21,7 @@ const Menu = ({items, active, setActive, header}) => {
                     <ul>
                         {items.map(item =>
                             <li key={item.value} onClick={()=> !item.dropdown ? null : setMenuActive(!menuActive)} className={item.dropdown ? 'item__dropdown ' : ''}>
-                                <a href={item.href} className={location.pathname === item.href? 'active' : ''}>{item.value}<i className="fa fa-angle-right"></i></a>
+                                <Link to={item.href} className={location.pathname === item.href? 'active' : ''}>{item.value}<i className="fa fa-angle-right"></i></Link>
                                 {item.dropdown &&
                                     <DropdownMenu items={settings_items} active={menuActive} setActive={setMenuActive}/>
                                 }

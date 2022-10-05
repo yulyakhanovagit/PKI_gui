@@ -14,3 +14,7 @@
     padding: 0 40px 30px 40px;
     background-color: white;
 }
+.table__container{
+    overflow: auto;
+    position: relative;
+}

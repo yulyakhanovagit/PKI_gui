@@ -5,7 +5,7 @@ import EditTable from "../../components/UI/table/EditTable";
 const PowerSupplySensors = ({columns, data}) => {
 
     return (
-            <MyForm content={<div>
+            <MyForm content={<div className='table__container'>
                 <EditTable data={data} columns={columns}/>
             </div>}/>
     );
